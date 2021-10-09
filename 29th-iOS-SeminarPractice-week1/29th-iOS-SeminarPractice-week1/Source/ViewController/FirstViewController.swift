@@ -25,7 +25,8 @@ class FirstViewController: UIViewController {
         }
         
         resultViewController.message = messageTextField.text
-        resultViewController.modalPresentationStyle = .overFullScreen
+        resultViewController.modalPresentationStyle = .fullScreen
+        resultViewController.modalTransitionStyle = .partialCurl
         self.present(resultViewController, animated: true, completion: nil)
     }
     
