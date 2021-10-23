@@ -21,6 +21,7 @@ class PickerPracticeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         initPartData()
         pickerView.dataSource = self
         pickerView.delegate = self
