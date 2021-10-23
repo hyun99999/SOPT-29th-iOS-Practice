@@ -20,11 +20,11 @@ class FirstViewController: UIViewController {
     // MARK: - @IBAction Properties
     
     @IBAction func touchUpSendData(_ sender: Any) {
-        guard let resultViewController = self.storyboard?.instantiateViewController(withIdentifier: ResultViewController.identifier) as? ResultViewController else {
+        guard let resultViewController = self.storyboard?.instantiateViewController(withIdentifier: ResultViewController.identifier) else {
             return
         }
         
-        resultViewController.message = messageTextField.text
+//        resultViewController.message = messageTextField.text
         resultViewController.modalPresentationStyle = .fullScreen
         resultViewController.modalTransitionStyle = .partialCurl
         self.present(resultViewController, animated: true, completion: nil)
